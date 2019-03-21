@@ -28,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
 
             addTextView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
             addTextView.setText(companyData.getAppName());
+            addTextView.setTextAlignment(View.TEXT_ALIGNMENT_CENTER);
             addTextView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                    Intent intent = new Intent(getApplicationContext(), AppListingDetails.class);
                     intent.putExtra("Image", companyData);
                     startActivity(intent);
                 }
