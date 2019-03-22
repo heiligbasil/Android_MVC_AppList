@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+import static com.lambdaschool.android_mvc_applist.AppListingDetails.EXTRA_NAME;
 import static com.lambdaschool.android_mvc_applist.AppRepository.getAppListings;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(getApplicationContext(), AppListingDetails.class);
-                    intent.putExtra("Image", companyData);
+                    intent.putExtra(EXTRA_NAME, companyData);
                     startActivity(intent);
                 }
             });
