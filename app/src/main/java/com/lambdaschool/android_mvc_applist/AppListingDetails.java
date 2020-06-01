@@ -1,9 +1,12 @@
 package com.lambdaschool.android_mvc_applist;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 public class AppListingDetails extends AppCompatActivity {
 
@@ -23,5 +26,12 @@ public class AppListingDetails extends AppCompatActivity {
         ((TextView)findViewById(R.id.text_view_domain_name)).append(mockDataToShow.getDomainName());
         ((TextView)findViewById(R.id.text_view_contact_email)).append(mockDataToShow.getContactEmail());
         ((TextView)findViewById(R.id.text_view_image_url)).append(mockDataToShow.getImageUrl());
+        Picasso.get().setLoggingEnabled(true);
+        Picasso.get().setIndicatorsEnabled(true);
+        Picasso.get()
+                .load(mockDataToShow.getImageUrl())
+                .placeholder(R.drawable.placeholder)
+                .error(R.drawable.error)
+                .into((ImageView) findViewById(R.id.image_view_image));
     }
 }

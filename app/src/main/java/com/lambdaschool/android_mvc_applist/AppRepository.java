@@ -15,7 +15,7 @@ public class AppRepository {
             try {
                 organizedComponents.setId(Integer.parseInt(chunkComponents[0]));
             } catch (Exception e) {
-                organizedComponents.setId(-1);;
+                organizedComponents.setId(-1);
             }
             organizedComponents.setAppName(chunkComponents[1]);
             organizedComponents.setAppVersion(chunkComponents[2]);

@@ -2,56 +2,56 @@ package com.lambdaschool.android_mvc_applist;
 
 import java.io.Serializable;
 
-public class AppListing  implements Serializable {
+class AppListing  implements Serializable {
 
     private  int id;
     private String appName, appVersion, domainName, contactEmail, imageUrl;
 
-    public int getId() {
+    int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    void setId(int id) {
         this.id = id;
     }
 
-    public String getAppName() {
+    String getAppName() {
         return appName;
     }
 
-    public void setAppName(String appName) {
+    void setAppName(String appName) {
         this.appName = appName;
     }
 
-    public String getAppVersion() {
+    String getAppVersion() {
         return appVersion;
     }
 
-    public void setAppVersion(String appVersion) {
+    void setAppVersion(String appVersion) {
         this.appVersion = appVersion;
     }
 
-    public String getDomainName() {
+    String getDomainName() {
         return domainName;
     }
 
-    public void setDomainName(String domainName) {
+    void setDomainName(String domainName) {
         this.domainName = domainName;
     }
 
-    public String getContactEmail() {
+    String getContactEmail() {
         return contactEmail;
     }
 
-    public void setContactEmail(String contactEmail) {
+    void setContactEmail(String contactEmail) {
         this.contactEmail = contactEmail;
     }
 
-    public String getImageUrl() {
+    String getImageUrl() {
         return imageUrl;
     }
 
-    public void setImageUrl(String imageUrl) {
+    void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
 }

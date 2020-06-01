@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AppListingDetails"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".AppListingDetails">
 
     <TextView
         android:id="@+id/text_view_heading"
@@ -30,60 +31,70 @@
         android:id="@+id/text_view_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="10sp"
         android:text="ID: "
         android:textAlignment="textStart"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="10sp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_view_app_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="10sp"
         android:text="Application Name: "
         android:textAlignment="textStart"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="10sp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_view_app_version"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="10sp"
         android:text="Application Version: "
         android:textAlignment="textStart"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="10sp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_view_domain_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="10sp"
         android:text="Domain Name: "
         android:textAlignment="textStart"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="10sp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_view_contact_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="10sp"
         android:text="Contact E-Mail: "
         android:textAlignment="textStart"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="10sp"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text_view_image_url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="10sp"
         android:text="Image URL: "
         android:textAlignment="textStart"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="10sp"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/dummy_image"
+        android:src="@color/colorPrimaryDark" />
 
 </LinearLayout>
